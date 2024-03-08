@@ -10,14 +10,14 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;          
-            background-color: rgb(73 105 199 / 70%);
+            background-color: #101085;
             background-position: center;
             background-size: cover;
             background-attachment: fixed;
         }
  
         nav {
-            background-color: #cacada17;
+            background-color: #cacadaf5;
             color: white;
             padding: 15px;
         }
@@ -74,16 +74,15 @@
         }
         h1{
             font-family: 'New Walt Disney Font', sans-serif;                                
-            font-size: 40px;
+            font-size: 52px;
             margin: 0;
             text-align: center;
             position:relative;
             margin-block-end: -22px;
-            margin-top: 10px;
             margin-left: 490px;
-            margin-top: 50px;
+            margin-top: 70px;
             margin-right: 521px;
-            color: #101085;
+            color: #cacadaf5;
         }
     </style>
 </head>

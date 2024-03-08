@@ -29,7 +29,11 @@
         border-radius: 15px;
         background-color:#cacadaf5;
         box-shadow: 5px 5px 10px;
+        transition: transform 0.3s ease;
     }
+    form:hover {
+         transform: scale(1.05);
+        }
     form img {
      width: 30%;
      height: 260px;

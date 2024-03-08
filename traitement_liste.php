@@ -10,7 +10,10 @@
             background-color:#101085;
         }
         h1{
-         font-size: 80px;
+            font-size: 70px;
+            margin-top: 80px;
+            margin-bottom: 89px;
+
          font-family: 'New Walt Disney Font', sans-serif; 
          text-align: center;
          color:#cacadaf5;

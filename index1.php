@@ -10,8 +10,8 @@
         body {
             font-family: Arial, sans-serif;
             margin: 0;
-            padding: 0;          
-            background-image: url('asset/disney.jpg'); 
+            padding: 0;         
+            background-color: #0f1e76; 
             background-position: center; 
             background-size: cover;
             background-attachment: fixed;
@@ -35,9 +35,11 @@
         nav img{
             width:100px;
             text-align: center;
+            margin-left: 90px;
         }
         .log{
             margin-top: 13px;
+            margin-right: 120px;
         }
 
         #inscription, #connexion {
@@ -62,20 +64,20 @@
           flex-wrap: wrap; 
           justify-content: center; 
           align-items: center; 
-          margin-top: 7px;
           margin-bottom: 100px;
         }
         #bloc1,#bloc2,#bloc3,#bloc4,#bloc5,#bloc6,#bloc7,#bloc8,#bloc9,#bloc10{
-            background-color: #cacadade;
+            background-color: #cacadaf5;
             height: 280px;
-            width: 475px;
+            width: 405px;
             bottom:0px;
             right:0px;
-            margin: 5px;
+            margin: 10px;
+            border-radius: 15px;
             box-shadow: 5px 5px 10px;
             transition: 5s;
             display: flex;
-           
+            transition: transform 0.3s ease;
             align-items: center;
             flex-direction:column;
         }
@@ -84,7 +86,7 @@
             width:20vw;
             display: flex;
             justify-content:center;
-            
+            border-radius: 8px;
            
 
         }
@@ -92,6 +94,7 @@
             font-family: 'New Walt Disney Font', sans-serif;                                
             font-size: 40px;
             margin: 0;
+            color:#101085;
             text-align: center;
             position:relative;
             margin-block-end: -22px;
@@ -99,13 +102,12 @@
         }
         #attraction{
             font-family: 'New Walt Disney Font', sans-serif;  
+            color:#cacadaf5;
             text-align: center;
             font-size: 60px;
-            box-shadow: 5px 5px 10px;
-            background-color: #cacadaf5;
             margin-right: 353px;
             margin-left: 424px;
-            margin-top: 70px;
+            margin-top: 80px;
         }
         #ajt{
             
@@ -122,9 +124,40 @@
          user-select: none;
          -webkit-user-select: none;
          touch-action: manipulation;
+         background-color:#cacadaf5;
         }
         input[type="checkbox"] {
             box-shadow: 5px 5px 10px;
+        }
+        #bloc1:hover {
+         transform: scale(1.05);
+        }
+        #bloc2:hover {
+         transform: scale(1.05);
+        }
+        #bloc3:hover {
+         transform: scale(1.05);
+        }
+        #bloc4:hover {
+         transform: scale(1.05);
+        }
+        #bloc5:hover {
+         transform: scale(1.05);
+        }
+        #bloc6:hover {
+         transform: scale(1.05);
+        }
+        #bloc7:hover {
+         transform: scale(1.05);
+        }
+        #bloc8:hover {
+         transform: scale(1.05);
+        }
+        #bloc9:hover {
+         transform: scale(1.05);
+        }
+        #bloc10:hover {
+         transform: scale(1.05);
         }
     </style>
 </head>
@@ -143,7 +176,7 @@
        
     </nav>
 
-    <h1 id="attraction">Choisissez Vos Attraction Favorites<h1>
+    <h1 id="attraction">Choisissez Vos Attractions Favorites<h1>
     <br>    
     <div id="container">
         <div id="bloc1">

@@ -6,10 +6,14 @@
     <link href="https://fonts.cdnfonts.com/css/new-walt-disney-font" rel="stylesheet"> 
     <title>Attractions Favorites</title> <!-- Titre de la page -->
     <style>
+        body{
+            background-color:#101085;
+        }
         h1{
          font-size: 80px;
          font-family: 'New Walt Disney Font', sans-serif; 
          text-align: center;
+         color:#cacadaf5;
         }
     form{
         display: flex;
@@ -17,16 +21,21 @@
         margin: 1%;
         padding: 1%;
         border: solid 2px black;
-        width: 90%;
-        margin-left: 55px;
+        width: 85%;
+        margin-left: 100px;
+        border-radius: 15px;
+        background-color:#cacadaf5;
+        box-shadow: 5px 5px 10px;
     }
     form img {
      width: 30%;
      height: 260px;
+     border-radius: 15px;
     }
     form p{
      font-size: 80px;
      font-family: 'New Walt Disney Font', sans-serif; 
+     color:#101085;
     }
     #sup input{
      
@@ -35,6 +44,7 @@
      background-color: rgb(255,255,255,0.7);
      color: white;
      padding: 15px;
+     margin: -7px
     }
     nav a {
      color: white;
@@ -45,6 +55,7 @@
     nav img{
      width:100px;
      text-align: center;
+     margin-left: 73px;
     }
     #contenu{
      display:flex;
@@ -75,18 +86,18 @@
         
     </style>
 </head>
-<body>
-    
+<body>   
     <nav>
         <div id="contenu">
             <div>
                <a href="./index1.php"><img class="logo" src="asset/Disney+_logo.jpg "></a> <!-- Logo et lien vers la page d'accueil -->
             </div>
-        </div>
-       
+        </div>      
     </nav>
     <h1>Attraction Favorites</h1> <!-- Titre de la page -->
-<?php
+
+   <div class ='container'>
+    <?php
     session_start(); // Démarre une session PHP
 
     $file=fopen("fav.csv","r"); // Ouvre le fichier CSV des favoris en mode lecture
@@ -142,5 +153,6 @@ if (isset($_POST['nom'])&& isset($_POST['action'])) { // Vérifie si les donnée
 
     
     ?>
+    </div>
 </body>
 </html>

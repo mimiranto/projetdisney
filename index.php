@@ -3,21 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.cdnfonts.com/css/new-walt-disney-font" rel="stylesheet">
     <title>ACCUEIL</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;          
-            background-image: url('asset/disney.jpg');
+            background-color: rgb(73 105 199 / 70%);
             background-position: center;
             background-size: cover;
             background-attachment: fixed;
-         
         }
  
         nav {
-            background-color: rgb(255,255,255,0.7);
+            background-color: #cacada17;
             color: white;
             padding: 15px;
         }
@@ -33,9 +33,11 @@
         nav img{
             width:100px;
             text-align: center;
+            margin-left: 90px;
         }
         .log{
             margin-top: 13px;
+            margin-right: 181px;
         }
  
         #inscription, #connexion {
@@ -58,6 +60,31 @@
             display:flex;
             justify-content: space-between;
         }
+        
+        .container {
+         max-width: 800px; /* Ajustez la largeur de votre conteneur selon vos besoins */
+         text-align: center;
+        }
+        video{
+            align-self: center; 
+            width: 1100px;
+            margin-left: 205px;
+            margin-top: 90px;
+            margin-bottom: 80px;
+        }
+        h1{
+            font-family: 'New Walt Disney Font', sans-serif;                                
+            font-size: 40px;
+            margin: 0;
+            text-align: center;
+            position:relative;
+            margin-block-end: -22px;
+            margin-top: 10px;
+            margin-left: 490px;
+            margin-top: 50px;
+            margin-right: 521px;
+            color: #101085;
+        }
     </style>
 </head>
 <body>
@@ -73,9 +100,12 @@
             </div>
         </div>
     </nav>
- 
-   <h3>
- 
- 
+    <h1>Venez Decouvrir Notre Parc</h1>
+        <video controls autoplay muted>
+            <source src="asset/disneyvideo.mp4" type="video/mp4">
+        <!-- Ajoutez des sources supplémentaires ici pour la compatibilité avec d'autres formats -->
+            Votre navigateur ne prend pas en charge la lecture de vidéos HTML5.
+        </video> 
+
 </body>
 </html>

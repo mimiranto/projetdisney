@@ -112,7 +112,7 @@
     while(($data=fgetcsv($file))!==false){ // Parcours du fichier CSV des favoris
         while(($line = fgetcsv($file)) !== false) { // Lecture de chaque ligne du fichier
             if($line[0] == $_SESSION['id_user']){ ?>  <!-- Vérifie si l'ID de l'utilisateur correspond à celui stocké en session -->
-           <form action="?route=<?php echo $line[0]?>" method="post"> <!-- Formulaire pour supprimer une attraction -->
+           <form action="traitement_supprimer.php?route=<?php echo $line[1]?>" method="post"> <!-- Formulaire pour supprimer une attraction -->
             <img src="<?php echo $line[3] ?>" alt="img"> <!-- Affichage de l'image de l'attraction -->
             <p><?php echo $line[2] ?><p> <!-- Affichage du nom de l'attraction -->
             <div class='supp'>
@@ -126,40 +126,8 @@
     }  
 
 fclose($file); // Ferme le fichier CSV des favoris
+?>
 
-if (isset($_GET['route'])&& isset($_POST['action'])) { // Vérifie si les données 'nom' et 'action' sont envoyées via POST
-    
-    if($_POST['action'] == 'Supprimer') { // Vérifie si l'action est de supprimer une attraction
-        $index1 = null; // Initialise l'indice de l'attraction à null
- 
-        $file = fopen('fav.csv', 'r'); // Ouvre le fichier CSV des favoris en mode lecture
-        while (($data = fgetcsv($file)) !== false) { // Parcours du fichier CSV des favoris
-            $tab1[] = $data; // Stocke chaque ligne dans un tableau
-        }
-        fclose($file) ; // Ferme le fichier des favoris
-        foreach ($tab1 as $key => $value) { // Parcours du tableau des favoris
-            if($value[0] == $_GET['route']){ // Vérifie si l'ID de l'attraction correspond à celui envoyé via POST
-              $index1 = $key  ;                  
-            }     
-        }
-        if($index1 !== null) { // Vérifie si l'indice de l'attraction à supprimer a été trouvé
-        unset($tab1[$index1]); // Supprime l'attraction du tableau des favoris
-        }
- 
-    $file_b = fopen('fav.csv', 'w'); // Ouvrir un fichier en mode écriture
- 
-    foreach ($tab1 as $row) { // Parcours du tableau des favoris
-        fputcsv($file_b, $row); // Écrire une ligne dans le fichier CSV
-    }
- 
-        fclose($file_b); // Fermer le fichier
-   
-        }
-        header('location: ./traitement_liste.php'); // Redirection vers la page actuelle
-    }
-
-    
-    ?>
     </div>
 </body>
 </html>

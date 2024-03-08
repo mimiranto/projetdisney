@@ -112,11 +112,11 @@
     while(($data=fgetcsv($file))!==false){ // Parcours du fichier CSV des favoris
         while(($line = fgetcsv($file)) !== false) { // Lecture de chaque ligne du fichier
             if($line[0] == $_SESSION['id_user']){ ?>  <!-- Vérifie si l'ID de l'utilisateur correspond à celui stocké en session -->
-           <form action="" method="post"> <!-- Formulaire pour supprimer une attraction -->
+           <form action="?route=<?php echo $line[0]?>" method="post"> <!-- Formulaire pour supprimer une attraction -->
             <img src="<?php echo $line[3] ?>" alt="img"> <!-- Affichage de l'image de l'attraction -->
             <p><?php echo $line[2] ?><p> <!-- Affichage du nom de l'attraction -->
             <div class='supp'>
-             <input type="checkbox" name="nom" value="<?php echo $line[0]?>"> <!-- Case à cocher avec l'ID de l'attraction -->
+             <!-- Case à cocher avec l'ID de l'attraction -->
              <input type="submit" name="action" id='sup' value="Supprimer"> <!-- Bouton de suppression -->
             </div> 
         </form>
@@ -127,7 +127,7 @@
 
 fclose($file); // Ferme le fichier CSV des favoris
 
-if (isset($_POST['nom'])&& isset($_POST['action'])) { // Vérifie si les données 'nom' et 'action' sont envoyées via POST
+if (isset($_GET['route'])&& isset($_POST['action'])) { // Vérifie si les données 'nom' et 'action' sont envoyées via POST
     
     if($_POST['action'] == 'Supprimer') { // Vérifie si l'action est de supprimer une attraction
         $index1 = null; // Initialise l'indice de l'attraction à null
@@ -138,7 +138,7 @@ if (isset($_POST['nom'])&& isset($_POST['action'])) { // Vérifie si les donnée
         }
         fclose($file) ; // Ferme le fichier des favoris
         foreach ($tab1 as $key => $value) { // Parcours du tableau des favoris
-            if($value[0] == $_POST['nom']){ // Vérifie si l'ID de l'attraction correspond à celui envoyé via POST
+            if($value[0] == $_GET['route']){ // Vérifie si l'ID de l'attraction correspond à celui envoyé via POST
               $index1 = $key  ;                  
             }     
         }

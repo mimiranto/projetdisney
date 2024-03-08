@@ -183,8 +183,8 @@
             <h1 id="txt">Hollywood Tower</h1> <!-- Titre du bloc -->
             <br>
             <img id="im1" src="asset/holly.jpeg"> <!-- Image de l'attraction -->
-        <form method="post" action="traitement_fav.php"> <!-- Formulaire pour ajouter aux favoris -->
-            <input type="checkbox" name="nom" value="1"> <!-- Case à cocher pour l'ajout aux favoris -->
+        <form method="post" action="traitement_fav.php?route=1"> <!-- Formulaire pour ajouter aux favoris -->
+                  <!-- Case à cocher pour l'ajout aux favoris -->
             <input type="submit" name="action" id='ajt' value="Ajouter aux favoris"> <!-- Bouton pour ajouter aux favoris -->
         </form>
         </div>
@@ -192,8 +192,8 @@
             <h1 id="txt">Indiana Jones</h1> <!-- Titre du bloc -->
             <br>
             <img id="im1" src="asset/jones.jpeg"> <!-- Image de l'attraction -->
-        <form method="post" action="traitement_fav.php"> <!-- Formulaire pour ajouter aux favoris -->
-            <input type="checkbox" name="nom" value="2"> <!-- Case à cocher pour l'ajout aux favoris -->
+        <form method="post" action="traitement_fav.php?route=2"> <!-- Formulaire pour ajouter aux favoris -->
+           <!-- Case à cocher pour l'ajout aux favoris -->
             <input type="submit" name="action" id='ajt' value="Ajouter aux favoris"> <!-- Bouton pour ajouter aux favoris -->
         </form>
         </div>
@@ -201,8 +201,8 @@
             <h1 id="txt">Manoir Hantée</h1> <!-- Titre du bloc -->
             <br>
             <img id="im1" src="asset/maison.jpeg"> <!-- Image de l'attraction -->
-        <form method="post" action="traitement_fav.php"> <!-- Formulaire pour ajouter aux favoris -->
-            <input type="checkbox" name="nom" value="3"> <!-- Case à cocher pour l'ajout aux favoris -->
+        <form method="post" action="traitement_fav.php?route=3"> <!-- Formulaire pour ajouter aux favoris -->
+             <!-- Case à cocher pour l'ajout aux favoris -->
             <input type="submit" name="action" id='ajt' value="Ajouter aux favoris"> <!-- Bouton pour ajouter aux favoris -->
         </form>
         </div>
@@ -210,8 +210,8 @@
             <h1 id="txt">Flight force</h1> <!-- Titre du bloc -->
             <br>
             <img id="im1" src="asset/iron.jpeg"> <!-- Image de l'attraction -->
-        <form method="post" action="traitement_fav.php"> <!-- Formulaire pour ajouter aux favoris -->
-            <input type="checkbox" name="nom" value="4"> <!-- Case à cocher pour l'ajout aux favoris -->
+        <form method="post" action="traitement_fav.php?route=4"> <!-- Formulaire pour ajouter aux favoris -->
+            <!-- Case à cocher pour l'ajout aux favoris -->
             <input type="submit" name="action" id='ajt' value="Ajouter aux favoris"> <!-- Bouton pour ajouter aux favoris -->
         </form>
         </div>
@@ -219,8 +219,8 @@
             <h1 id="txt">Buzz laser blast</h1> <!-- Titre du bloc -->
             <br>
             <img id="im1" src="asset/buzz.jpeg"> <!-- Image de l'attraction -->
-        <form method="post" action="traitement_fav.php"> <!-- Formulaire pour ajouter aux favoris -->
-            <input type="checkbox" name="nom" value="5"> <!-- Case à cocher pour l'ajout aux favoris -->
+        <form method="post" action="traitement_fav.php?route=5"> <!-- Formulaire pour ajouter aux favoris -->
+             <!-- Case à cocher pour l'ajout aux favoris -->
             <input type="submit" name="action" id='ajt' value="Ajouter aux favoris"> <!-- Bouton pour ajouter aux favoris -->
         </form>
         </div>
@@ -228,8 +228,8 @@
             <h1 id="txt">Pirate des Caraïbes</h1> <!-- Titre du bloc -->
             <br>
             <img id="im1" src="asset/pirate.jpg"> <!-- Image de l'attraction -->
-        <form method="post" action="traitement_fav.php"> <!-- Formulaire pour ajouter aux favoris -->
-            <input type="checkbox" name="nom" value="6"> <!-- Case à cocher pour l'ajout aux favoris -->
+        <form method="post" action="traitement_fav.php?route=6"> <!-- Formulaire pour ajouter aux favoris -->
+            <!-- Case à cocher pour l'ajout aux favoris -->
             <input type="submit" name="action" id='ajt' value="Ajouter aux favoris"> <!-- Bouton pour ajouter aux favoris -->
         </form>
         </div>
@@ -237,8 +237,8 @@
             <h1 id="txt">Big Thunder Mountain</h1> <!-- Titre du bloc -->
             <br>
             <img id="im1" src="asset/mountain.jpg"> <!-- Image de l'attraction -->
-        <form method="post" action="traitement_fav.php"> <!-- Formulaire pour ajouter aux favoris -->
-            <input type="checkbox" name="nom" value="7"> <!-- Case à cocher pour l'ajout aux favoris -->
+        <form method="post" action="traitement_fav.php?route=7"> <!-- Formulaire pour ajouter aux favoris -->
+             <!-- Case à cocher pour l'ajout aux favoris -->
             <input type="submit" name="action" id='ajt' value="Ajouter aux favoris"> <!-- Bouton pour ajouter aux favoris -->
         </form>
         </div>
@@ -246,8 +246,8 @@
             <h1 id="txt">Its a Small World</h1> <!-- Titre du bloc -->
             <br>
             <img id="im1" src="asset/word.jpg"> <!-- Image de l'attraction -->
-        <form method="post" action="traitement_fav.php"> <!-- Formulaire pour ajouter aux favoris -->
-            <input type="checkbox" name="nom" value="8"> <!-- Case à cocher pour l'ajout aux favoris -->
+        <form method="post" action="traitement_fav.php?route=8"> <!-- Formulaire pour ajouter aux favoris -->
+             <!-- Case à cocher pour l'ajout aux favoris -->
             <input type="submit" name="action" id='ajt' value="Ajouter aux favoris"> <!-- Bouton pour ajouter aux favoris -->
         </form>
         </div>
@@ -255,8 +255,8 @@
             <h1 id="txt">Star Tours</h1> <!-- Titre du bloc -->
             <br>
             <img id="im1" src="asset/startour.jpg"> <!-- Image de l'attraction -->
-        <form method="post" action="traitement_fav.php"> <!-- Formulaire pour ajouter aux favoris -->
-            <input type="checkbox" name="nom" value="9"> <!-- Case à cocher pour l'ajout aux favoris -->
+        <form method="post" action="traitement_fav.php?route=9"> <!-- Formulaire pour ajouter aux favoris -->
+             <!-- Case à cocher pour l'ajout aux favoris -->
             <input type="submit" name="action" id='ajt' value="Ajouter aux favoris"> <!-- Bouton pour ajouter aux favoris -->
         </form>
         </div>

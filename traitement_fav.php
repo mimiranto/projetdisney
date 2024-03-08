@@ -1,7 +1,8 @@
 <?php
+print_r($_GET);
 session_start(); // Démarre la session PHP pour pouvoir utiliser les variables de session
 
-if (isset($_POST['nom']) && isset($_POST['action']) && isset($_SESSION['id_user'])) { // Vérifie si les données 'nom' et 'action' sont envoyées via POST et si la session utilisateur est active
+if (isset($_GET['route']) && isset($_POST['action']) && isset($_SESSION['id_user'])) { // Vérifie si les données 'nom' et 'action' sont envoyées via POST et si la session utilisateur est active
     $user = $_SESSION['id_user']; // Stocke l'ID de l'utilisateur actuel dans la variable $user
     $file_name = 'fav.csv'; // Définit le nom du fichier de favoris
 
@@ -27,7 +28,7 @@ if (isset($_POST['nom']) && isset($_POST['action']) && isset($_SESSION['id_user'
 
         $index1 = null; // Initialise l'indice de l'attraction à null
         foreach ($tab as $key => $value) { // Parcourt le tableau des attractions
-            if ($value[0] == $_POST['nom']) { // Vérifie si le nom de l'attraction correspond à celui envoyé via POST
+            if ($value[0] == $_GET['route']) { // Vérifie si le nom de l'attraction correspond à celui envoyé via POST
                 $index1 = $key; // Stocke l'indice de l'attraction correspondante
             }
         }
